@@ -29,7 +29,7 @@ class Vote extends AbstractRequest
      * One of the MODE_* variables.
      *
      * @var int
-     * @validate NumberRange(minimum=1, maximum=2)
+     * @TYPO3\CMS\Extbase\Annotation\Validate NumberRange(minimum=1, maximum=2)
      */
     protected $mode;
 
