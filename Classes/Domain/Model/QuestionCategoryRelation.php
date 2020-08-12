@@ -8,12 +8,14 @@ declare(strict_types = 1);
 namespace HDNET\Faq\Domain\Model;
 
 use HDNET\Autoloader\Domain\Model\AbstractAdvancedRelation;
+use HDNET\Autoloader\Annotation\DatabaseTable;
+use HDNET\Autoloader\Annotation\SmartExclude;
 
 /**
  * Relation.
  *
  * @smartExclude EnableFields,Language,Workspaces
- * @db           tx_faq_mm_question_questioncategory
+ * @DatabaseTable(tableName="tx_faq_questionCategoryRelation")
  */
 class QuestionCategoryRelation extends AbstractAdvancedRelation
 {

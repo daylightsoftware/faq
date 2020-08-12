@@ -6,11 +6,13 @@ declare(strict_types = 1);
  */
 
 namespace HDNET\Faq\Domain\Model;
+use HDNET\Autoloader\Annotation\DatabaseField;
+use HDNET\Autoloader\Annotation\DatabaseTable;
 
 /**
  * Questioncategory / Fragen Kategorie.
  *
- * @db
+ * @DatabaseTable(tableName="tx_faq_questioncategory")
  */
 class Questioncategory extends AbstractModel
 {
@@ -18,7 +20,7 @@ class Questioncategory extends AbstractModel
      * Title.
      *
      * @var string
-     * @db
+     * @DatabaseField(type="string")
      */
     protected $title;
 
@@ -26,12 +28,13 @@ class Questioncategory extends AbstractModel
      * Parent.
      *
      * @var \HDNET\Faq\Domain\Model\Questioncategory
-     * @db int(11) DEFAULT '0'
+     * @DatabaseField(type="int", sql="int(11) DEFAULT '0'")
      */
     protected $parent;
 
     /**
      * @var int
+     * @DatabaseField(type="int")
      */
     protected $_languageUid = 0;
 
@@ -39,6 +42,7 @@ class Questioncategory extends AbstractModel
      * Set the title.
      *
      * @param string $title
+     * @DatabaseField(type="string")
      */
     public function setTitle($title)
     {

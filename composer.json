@@ -1,4 +1,7 @@
 {
+  "repositories": [
+    { "type": "github","url": "https://github.com/daylightsoftware/autoloader.git"}
+  ],
   "name": "daylightsoftware/faq",
   "type": "typo3-cms-extension",
   "description": "Basic FAQ (Frequently Asked Questions) extension in a clean extbase/fluid structure. Questions and Question categroies with a smart plugin structure.",
@@ -26,7 +29,7 @@
   ],
   "require": {
     "php": "^7.2||^7.3||^7.4",
-    "lochmueller/autoloader": "dev-master",
+    "daylightsoftware/autoloader": "dev-master",
     "typo3/cms-core": "^10.4"
   },
   "minimum-stability": "dev",

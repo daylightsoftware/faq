@@ -8,11 +8,13 @@ declare(strict_types = 1);
 namespace HDNET\Faq\Domain\Model;
 
 use TYPO3\CMS\Extbase\Persistence\ObjectStorage;
+use HDNET\Autoloader\Annotation\DatabaseField;
+use HDNET\Autoloader\Annotation\DatabaseTable;
 
 /**
  * Question / Frage.
  *
- * @db
+ * @DatabaseTable(tableName="tx_faq_question")
  */
 class Question extends AbstractModel
 {
@@ -20,7 +22,7 @@ class Question extends AbstractModel
      * Title.
      *
      * @var string
-     * @db
+     * @DatabaseField(type="string")
      */
     protected $title = '';
 
@@ -28,7 +30,7 @@ class Question extends AbstractModel
      * Answer.
      *
      * @var string
-     * @db
+     * @DatabaseField(type="string")
      */
     protected $answer = '';
 
@@ -36,7 +38,7 @@ class Question extends AbstractModel
      * Tags.
      *
      * @var string
-     * @db
+     * @DatabaseField(type="string")
      */
     protected $tags = '';
 
@@ -44,7 +46,7 @@ class Question extends AbstractModel
      * Top Counter.
      *
      * @var int
-     * @db
+     * @DatabaseField(type="int")
      */
     protected $topCounter = 0;
 
@@ -52,12 +54,13 @@ class Question extends AbstractModel
      * Flop Counter.
      *
      * @var int
-     * @db
+     * @DatabaseField(type="int")
      */
     protected $flopCounter = 0;
 
     /**
      * @var int
+     * @DatabaseField(type="int")
      */
     protected $_languageUid = 0;
 
@@ -65,7 +68,7 @@ class Question extends AbstractModel
      * Categories.
      *
      * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\HDNET\Faq\Domain\Model\Questioncategory>
-     * @db int(11) DEFAULT '0' NOT NULL
+     * @DatabaseField(type="int", sql="int(11) DEFAULT '0' NOT NULL")
      */
     protected $categories;
 
