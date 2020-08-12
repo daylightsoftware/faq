@@ -26,11 +26,8 @@
   ],
   "require": {
     "php": "^7.2||^7.3||^7.4",
-    "lochmueller/autoloader": "^7.0",
+    "lochmueller/autoloader": "dev-master",
     "typo3/cms-core": "^10.4"
-  },
-  "replace": {
-    "typo3-ter/faq": "self.version"
   },
   "homepage": "https://github.com/lochmueller/faq",
   "license": "GPL-2.0+",
