@@ -15,7 +15,7 @@ use HDNET\Autoloader\Annotation\SmartExclude;
  * Relation.
  *
  * @smartExclude EnableFields,Language,Workspaces
- * @DatabaseTable(tableName="tx_faq_questionCategoryRelation")
+ * @DatabaseTable(tableName="tx_faq_domain_model_questionCategoryRelation")
  */
 class QuestionCategoryRelation extends AbstractAdvancedRelation
 {

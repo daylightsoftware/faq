@@ -14,7 +14,7 @@ use HDNET\Autoloader\Annotation\DatabaseTable;
 /**
  * Question / Frage.
  *
- * @DatabaseTable(tableName="tx_faq_question")
+ * @DatabaseTable(tableName="tx_faq_domain_model_question")
  */
 class Question extends AbstractModel
 {

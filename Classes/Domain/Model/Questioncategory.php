@@ -12,7 +12,7 @@ use HDNET\Autoloader\Annotation\DatabaseTable;
 /**
  * Questioncategory / Fragen Kategorie.
  *
- * @DatabaseTable(tableName="tx_faq_questioncategory")
+ * @DatabaseTable(tableName="tx_faq_domain_model_questioncategory")
  */
 class Questioncategory extends AbstractModel
 {
